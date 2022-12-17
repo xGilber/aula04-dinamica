@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+
+
+    <title>Home</title>
+</head>
+
+<body>
+    <section id="topmenu">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="cadastro-medicamentos.html">Cadastro <br>de Medicamentos</a> </li>
+                <li><a href="cadastro-vacina.html">Cadastro <br>de Vacinas</a></li>
+                <li><a href="cadastro-cosmeticos.html">Cadastro <br>de Cosméticos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="submenu">
+            <img src="./src/img/vacine.png" alt="Logo de rémedio">
+            <div id="text">
+                <h1>Cadastro de Vacinas</h1>
+                <h2>Farmácia da Gente</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sec-form">
+
+        <div id="form-place">
+            <form onsubmit="addVac()">
+                <label for="fNameVac">Nome da Vacina</label>
+                <input type="text" name="fNameVac" autocomplete="off" id="fnamevac">
+
+                <label for="fQtdVac">Quantidade Disponível</label>
+                <input type="text" name="fQtdVac" autocomplete="off" id="fqtdvac">
+
+                <label for="fClassVac">Classe da Vacina</label>
+                <input type="text" name="fClassVac" autocomplete="off" id="fclassvac">
+
+                <label for="fValVac">Validade da Vacina</label>
+                <input type="date" name="fValVac" autocomplete="off" id="fvalvac">
+
+                <button type="submit" class="button-submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div>
+            <table id="tableVac">
+                <tr>
+                    <th>Nome da Vacina</th>
+                    <th>Quantidade Disponível</th>
+                    <th>Classe da Vacina</th>
+                    <th>Validade da Vacina</th>
+                    <th>Remover</th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <script src="./src/scripts/cadvac.js"></script>
+
+</body>
+
+</html>

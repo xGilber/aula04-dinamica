@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+
+
+    <title>Home</title>
+</head>
+
+<body>
+    <section id="topmenu">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="cadastro-medicamentos.html">Cadastro <br>de Medicamentos</a> </li>
+                <li><a href="cadastro-vacina.html">Cadastro <br>de Vacinas</a></li>
+                <li><a href="cadastro-cosmeticos.html">Cadastro <br>de Cosméticos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="submenu">
+            <img src="./src/img/cosmetic.png" alt="Logo de rémedio">
+            <div id="text">
+                <h1>Cadastro de Cosméticos</h1>
+                <h2>Farmácia da Gente</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sec-form">
+
+        <div id="form-place">
+            <form onsubmit="addCos()">
+                <label for="fTypeCos">Tipo do Cosmético</label>
+                <input type="text" name="fTypeCos" autocomplete="off" id="ftypecos">
+
+                <label for="fNameCos">Nome do Cosmético</label>
+                <input type="text" name="fNameCos" autocomplete="off" id="fnamecos">
+
+                <label for="fQtdCos">Quantidade Disponível</label>
+                <input type="text" name="fQtdCos" autocomplete="off" id="fqtdcos">
+
+                <label for="fValCos">Validade do Cosmético</label>
+                <input type="date" name="fValCos" autocomplete="off" id="fvalcos">
+
+                <button type="submit" class="button-submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div>
+            <table id="tableCos">
+                <tr>
+                    <th>Tipo do Cosmético</th>
+                    <th>Nome do Cosmético</th>
+                    <th>Quantidade Disponível</th>
+                    <th>Validade do Cosmético</th>
+                    <th>Remover</th>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <script src="./src/scripts/cadcos.js"></script>
+</body>
+
+</html>

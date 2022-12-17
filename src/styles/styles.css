@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: rgba(247, 224, 242, 0.66);
+}
+
+header {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.menu {
+    background: #76BEBE;
+    justify-items: center;
+    list-style: none;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    color: #F5F5F5;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.submenu img {
+    margin-left: 222px;
+    width: 150px;
+    height: 150px;
+}
+
+.submenu #text {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    color: #CF509C;
+}
+
+
+.submenu h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.submenu h2 {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: bold;
+    text-align: center;
+    color: black;
+}
+
+
+
+form {
+    margin-left: 5rem;
+    display: grid;
+    grid-auto-flow: row;
+    max-width: 467px;
+
+}
+
+input {
+    box-sizing: border-box;
+    border: none;
+    max-width: 467px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.57);
+    border-radius: 10px;
+
+    font-family: 'Alegreya Sans SC';
+    font-size: 20px;
+
+    padding: 0px 10px 0px 10px;
+    
+
+}
+
+label {
+    padding-bottom: 7px;
+    padding-top: 17px;
+    font-size: 28px;
+    line-height: 34px;
+    font-family: 'Alegreya Sans SC';
+}
+
+.button-submit {
+    background: #76BEBE;
+    border-radius: 10px;
+    border: none;
+    margin-top: 15px;
+    width: 280px;
+   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 46px;
+    text-align: center;
+    justify-content: center;
+    
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+}
+
+th {
+
+    background: #7b7474;
+    border: 2px solid #f3b4b4;
+    min-width: 180px;
+    height: 40px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+
+}
+
+td {
+    border: 2px solid #f3b4b4;
+    background: white;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    color: #000000;
+
+}
+
+#sec-form {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+
+#tableMed { 
+    margin-top:15px;
+}
+
+#tableVac { 
+    margin-top:15px;
+}
+
+#tableCos { 
+    margin-top:15px;
+}
+
